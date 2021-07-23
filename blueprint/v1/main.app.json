@@ -1,0 +1,14 @@
+{
+    "name": "ideas app",
+    "models": {
+        "category":"models/category",
+        "user":"models/users",
+        "organization":"models/organization",
+        "question":"models/question",
+        "idea":"models/idea",
+        "project":"models/project"
+    },
+    "services": {
+        "questions":"service/questions"
+    }
+}

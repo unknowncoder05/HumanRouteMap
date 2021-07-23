@@ -1,0 +1,13 @@
+{
+    "endpoints":{
+        "create":{
+            "request":{
+                "question" : {"type": "question.create"}
+            },
+            "response":{
+                "question" : {"type": "question.create"}
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "create":{
+        "name":{"type":"str", "max":20, "required":true},
+        "email":{"type":"email", "max":20, "required":true},
+        "password":{"type":"password", "max":100, "required":false},
+        "interests":{"repeated":true, "type":"category", "max":10}
+    }
+}

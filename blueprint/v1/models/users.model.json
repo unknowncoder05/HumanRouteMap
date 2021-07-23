@@ -1,0 +1,26 @@
+{
+    "attributes":{
+        "name":{"type":"str", "max":20, "required":true},
+        "email":{"type":"email", "max":20, "required":true},
+        "password":{"type":"password", "max":100, "required":false},
+        "interests":{"repeated":true, "type":"category", "max":10}
+    },
+    "create":{
+        "__extends":{
+            "from":"attributes",
+            "__excludes":["id"]
+        }
+    },
+    "read":{
+        "__extends":{
+            "from":"attributes",
+            "__excludes":["password"]
+        }
+    },
+    "get":{
+        "__extends":{
+            "from":"create",
+            "__excludes":[ "id"]
+        }
+    }
+}

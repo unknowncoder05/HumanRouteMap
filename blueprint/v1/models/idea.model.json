@@ -1,0 +1,10 @@
+{
+    "create":{
+        "owner":{"type":"user","required":true},
+        "title":{"type":"str", "max":20, "required":true},
+        "description":{"type":"str", "max":3000, "required":true},
+        "pros":{"type":"str", "max":1000, "required":true},
+        "cons":{"type":"str", "max":1000, "required":true},
+        "questions":{"repeated":true, "type":"question", "max":20, "required":true}
+    }
+}

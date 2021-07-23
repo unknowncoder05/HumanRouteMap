@@ -1,0 +1,5 @@
+{
+    "default":{
+        "name":{"type":"str", "max":20, "required":true}
+    }
+}

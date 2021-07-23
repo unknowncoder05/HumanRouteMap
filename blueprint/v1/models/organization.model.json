@@ -1,0 +1,14 @@
+{
+    "attributes":{
+        "name":{"type":"str", "max":20, "required":true},
+        "members":{},
+        "password":{"type":"password", "max":100, "required":false},
+        "interests":{"repeated":true, "type":"category", "max":10}
+    },
+    "create":{
+        "__extends":{
+            "from":"attributes",
+            "__excludes":["id"]
+        }
+    }
+}
